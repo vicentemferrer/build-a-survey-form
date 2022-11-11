@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Marvel Fanclub Register</title>
+    <meta charset='utf-8' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+    <h1 id='title'>Marvel Fanclub Register</h1>
+    <p id='description'>
+      We are a lot of different people with a common thing, our love for MCU 
+    </p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label'>Name: <input type='text' placeholder='Enter your name...' id='name' required /></label>
+        <label id='email-label'>Email: <input type='email' placeholder='Enter your email...' id='email' required /></label>
+        <label id='number-label'>Age: <input type='number' placeholder='Age' id='number' min='13' max='120' /></label>
+      </fieldset>
+      <fieldset>
+        <label>Which is your favourite Avengers movie?
+          <select id='dropdown'>
+            <option>(select one)</option>
+            <option>Avengers</option>
+            <option>Age of Ultron</option>
+            <option>Infitity War</option>
+            <option>Endgame</option>
+          </select>
+        </label>
+        <label><input type='radio' name='team' value='cap' class='inline' />Team Cap</label>
+        <label><input type='radio' name='team' value='iron man' class='inline' />Team Iron Man</label>
+      </fieldset>
+      <fieldset>
+        <p>Select your favourites Phase One projects:</p>
+        <label><input type='checkbox' value='iron1' id='iron1' />Iron Man</label>
+        <label><input type='checkbox' value='iron2' id='iron2' />Iron Man 2</label>
+        <label><input type='checkbox' value='cap1' id='cap1' />Capitain America</label>
+        <label><input type='checkbox' value='hulk' id='hulk' />The Incredible Hulk</label>
+        <label><input type='checkbox' value='thor' id='thor' />Thor</label>
+        <label id='avg-lab'><input type='checkbox' value='avg' id='avg' />The Avengers</label>
+        <label>Tell us about you:
+          <textarea></textarea>
+        </label>
+      </fieldset>
+      <input type='submit' value='Submit' id='submit' />
+    </form>
+    </div>
+  </body>
+</html>
